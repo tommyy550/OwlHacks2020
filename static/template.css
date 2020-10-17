@@ -1,0 +1,19 @@
+.c{
+
+    text-align: center;
+}
+
+#top{
+    height:100px;
+    background-color: red !important;
+}
+
+.pic{
+    width:195px;
+    height:116px;
+    padding:10px;
+}
+
+.navImage{
+    height:30px;
+}
