@@ -20,41 +20,56 @@
       <div class="col-md-8">
         <h3>Two people commit the same crime. One person pays bail and gets out while the other cannot
           afford to pay and is jailed for months.<h3>
-        <br>
-        <h3>Donate now to help those in need.<h3>
-          <label class="bold" for="amount">Amount($):</label>
-              <input type="number" id="amount" name="amount">
-              <input style="" class="btn btn-primary" type="submit" value="Donate">
-              
+            <br>
+            <h3>Donate now to help those in need.<h3>
+              <form action="#" method="POST">
+                <label class="bold" for="amount">Amount($):</label>
+                <input type="number" id="amount" name="amount" name="amount">
+                <input class="btn btn-primary" type="submit" value="Donate">
+
+
+              </form>
+               
+                <br>
+    
+                <!-- <h3 style="display: inline;">Total Donations($):</h3>
+                {% for item in userDetails %}
+                <h3 style="display: inline;">{{item["totalPoints"]}}</h3> -->
+
+
+                <!-- {% endfor %} -->
+                <br>
+                <br>
+                <h5>Previous Donations</h5>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Date</th>
+                        <th>Amount($)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="myTable">
+                      {% for item in donationDetails %}
+                      <tr>
+                        <td> {{item["date"]}} </td>
+                        <td> {{item["Amount"]}} </td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
       </div>
       <div class="col-md-2"></div>
-      
-      <!-- <div class="col-md-6">
-        <p class="bold">Two people commit the same crime. One person pays bail and gets out while the other cannot
-          afford to pay and is jailed for months.<p>
-        <br>
-        <h3>Donate now to help those in need.<h3>
-            <form>
-              <label class="bold" for="amount">Amount($):</label>
-              <input type="number" id="amount" name="amount">
-              <input class="btn btn-primary" type="submit" value="Donate">
-
-            </form>
 
 
-      </div>
-      <div class="col-md-6">
 
-            <br>
-            <div class="c">
-              <h3>Your Previous Donations</h3>
 
-            </div>
 
-      </div> -->
 
 
     </div>
+    <!-- 
 
     {% endblock %}
 </body>
