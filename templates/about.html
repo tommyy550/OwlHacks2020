@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About Flask</title>
-  </head>
-  <body>
-    {% extends "template.html" %}
-    {% block content %}
-    
-    <div class="container">
-      <div class="row">
-<div class="col-md-6">
-  
-</div>
-<div class="col-md-6">
-  
-</div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
 
-        </div>
-        <div class="col-md-6">
-          
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <style>
+    .about{
+    font-size: 1.5em;
+    font-weight:bold;
+    text-align: center;
+}
+  </style>
+</head>
+
+<body>
+  {% extends "template.html" %}
+  {% block content %}
+
+  <div class="container">
+    <br>
+    <p class="about">Problem Statement: In order to shift the bail system in Philadelphia, The Philadelphia Bail Fund helps pay bail for people who cannot afford it. Recent bail and arrest data shows how unfair the bail system is in Philadelphia.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../static/img/amount_by_age.png" />
+      </div>
+      <div class="col-md-6">
+        <img src="../static/img/amount_by_age.png" />
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../static/img/amount_by_age.png" />
+      </div>
+      <div class="col-md-6">
+        <img src="../static/img/amount_by_age.png" />
+      </div>
+    </div>
+  </div>
 
-    {% endblock %}
-  </body>
+  {% endblock %}
+</body>
+
 </html>
