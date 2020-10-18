@@ -80,7 +80,11 @@ def donate():
     cursor.execute("SELECT * FROM GAINS.dbo.Donations WHERE UserId='"+str(id)+"' ORDER BY date DESC")
 
     return render_template("donate.html",donationDetails=cursor)
-    
+
+@app.route("/logout")
+def logout():
+    session.pop("user_id", None)
+    return redirect(url_for("login"))
 if __name__ == "__main__":
     app.secret_key = 'super secret key'
     app.config['SESSION_TYPE'] = 'filesystem'
