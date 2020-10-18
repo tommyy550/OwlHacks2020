@@ -6,9 +6,22 @@
   <title>About</title>
   <style>
     .about{
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight:bold;
     text-align: center;
+}
+.text{
+  font-size: 1.25em;
+    text-align: center;
+}
+
+.mid{
+  text-align: center;
+}
+
+.img{
+  width:540px;
+  height:370px;
 }
   </style>
 </head>
@@ -20,22 +33,39 @@
   <div class="container">
     <br>
     <p class="about">Problem Statement: In order to shift the bail system in Philadelphia, The Philadelphia Bail Fund helps pay bail for people who cannot afford it. Recent bail and arrest data shows how unfair the bail system is in Philadelphia.</p>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="../static/img/amount_by_age.png" />
-      </div>
-      <div class="col-md-6">
-        <img src="../static/img/amount_by_age.png" />
-      </div>
+    <!-- <div class="row">
+      <div class="col-md-6"> -->
+        <div class="mid">
+          <img src="../static/img/amount_by_age.png" width="540px" height="370px" />
+          <p class="text">The average bail amount for adolescents is the greatest compared to all ages.</p>
+        </div>
+        
+      <!-- </div>
+      <div class="col-md-6"> -->
+        <div class="mid">
+          <img src="../static/img/amount_by_magistrate.png" width="540px" height="370px" />
+          <p class="text">The average bail amount varies by magistrate. An individuals bail amount shouldnt depend on who the magistrate was. This is unfair!</p>
+        </div>
+        
+      <!-- </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <img src="../static/img/amount_by_age.png" />
-      </div>
-      <div class="col-md-6">
-        <img src="../static/img/amount_by_age.png" />
-      </div>
-    </div>
+      <div class="col-md-6"> -->
+        <div class="mid">
+          <img src="../static/img/amount_by_month.png" width="540px" height="370px" />
+          <p class="text">The average bail amount in the month april and may were the highest. This was during the peak of the COVID-19 pandemic which left many unemployed making the bail amount even harder to cover.</p>
+        </div>
+        
+
+      <!-- </div>
+      <div class="col-md-6"> -->
+        <div class="mid">
+          <img src="../static/img/amount_philly_vs_vermont.png" width="540px" height="370px" />
+          <p class="text">If we look at the average bail amount from Philadelphia compared to the average in the state of Vermont, Philadelphia’s average bail amount is much higher.</p>
+        </div>
+        
+      <!-- </div>
+    </div> -->
   </div>
 
   {% endblock %}
